@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springboot-rpc-common" />
+        <module name="springboot-rpc-controller" />
+        <module name="springboot-rpc-api" />
+        <module name="springboot-rpc-starter" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="srpingboot-rpc-controller" target="1.8" />
+      <module name="srpingboot-rpc-starter" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="springboot-rpc-api" options="-parameters" />
+      <module name="springboot-rpc-common" options="-parameters" />
+      <module name="springboot-rpc-controller" options="-parameters" />
+      <module name="springboot-rpc-starter" options="-parameters" />
+      <module name="srpingboot-rpc-controller" options="-parameters" />
+      <module name="srpingboot-rpc-starter" options="-parameters" />
+    </option>
+  </component>
+</project>
